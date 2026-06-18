@@ -211,7 +211,7 @@
 
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E          &kp R  &kp T        &kp Y      &kp U  &kp I         &kp O    &kp P     &kp BSPC
-&kp LCTRL       &kp A  &kp S  &kp D          &kp F  &kp G        &kp H      &kp J  &kp K         &kp L    &kp SQT   &kp ESC
+&kp RCTRL       &kp A  &kp S  &kp D          &kp F  &kp G        &kp H      &kp J  &kp K         &kp L    &kp SQT   &kp ESC
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C          &kp V  &kp B        &kp N      &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                               &kp LEFT_META  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp LEFT_ALT
             >;
@@ -227,10 +227,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB      &kp PG_DN     &kp PG_UP     &kp INS         &kp N4     &kp N5    &kp N6    &kp N7    &kp N8        &kp N9     &kp N0  &kp BSPC
-&tog 4       &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LCTRL  &trans    &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &trans  &tog 5
-&bootloader  &trans        &trans        &trans          &trans     &trans    &kp DEL   &kp HOME  &kp END       &trans     &trans  &trans
-                                         &kp LGUI        &trans     &trans    &trans    &trans    &kp LEFT_ALT
+&kp TAB      &kp PG_DN     &kp PG_UP     &kp INS         &trans     &trans    &trans   &trans    &kp UP    &trans     &trans  &kp BSPC
+&tog 4       &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LCTRL  &trans    &trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &tog 5
+&bootloader  &trans        &trans        &trans          &trans     &trans    &kp DEL  &kp HOME  &kp END   &trans     &trans  &trans
+                                         &trans          &trans     &trans    &trans   &trans    &trans
             >;
 
             label = "NAV";
@@ -260,10 +260,10 @@
 
         MouseNav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans      &trans          &trans          &trans        &trans           &trans  &tog 4
-&trans  &trans  &trans  &trans  &mkp MB3  &trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-                        &trans  &mkp MB4  &mkp MB1    &mkp MB2        &mkp MB5        &trans
+&trans  &trans          &msc SCRL_UP    &trans           &trans    &trans      &trans    &trans          &mmv MOVE_UP    &trans           &trans  &tog 4
+&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &mkp MB3  &trans      &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans          &trans          &trans           &trans    &trans      &trans    &trans          &trans          &trans           &trans  &trans
+                                        &trans           &mkp MB4  &mkp MB1    &mkp MB2  &mkp MB5        &trans
             >;
 
             label = "MNA";
