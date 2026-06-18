@@ -1,19 +1,19 @@
 layout: {zmk_keyboard: corne}
 layers:
-  DEF: [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, LCTRL, A, S, D, F, G, H, J, K, L, '''', ESC, LEFT SHIFT, Z, X, C, V, B, N, M, ',', ., /, RIGHT SHIFT, LEFT META,
+  DEF: [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, RCTRL, A, S, D, F, G, H, J, K, L, '''', ESC, LEFT SHIFT, Z, X, C, V, B, N, M, ',', ., /, RIGHT SHIFT, LEFT META,
     NAV, SPACE, ENTER, N&S, LEFT ALT]
   NAV:
   - TAB
   - PG DN
   - PG UP
   - INS
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BSPC
   - {t: MNA, h: toggle}
   - {t: LEFT GUI, h: sticky}
@@ -21,9 +21,9 @@ layers:
   - {t: LEFT SHIFT, h: sticky}
   - {t: LCTRL, h: sticky}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - LEFT
   - DOWN
-  - UP
   - RIGHT
   - {t: ▽, type: trans}
   - {t: GA1, h: toggle}
@@ -39,12 +39,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LGUI
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT ALT
+  - {t: ▽, type: trans}
   N&S:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -134,25 +134,25 @@ layers:
   MNA:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&msc SCRL_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: MNA, h: toggle}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_RIGHT'
   - '&mkp MB3'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
   - '&mmv MOVE_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -162,10 +162,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
-  - '&msc SCRL_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
